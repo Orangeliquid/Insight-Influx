@@ -16,14 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import home, SaveRandomUsers, SignUpView, RandomUserListView
+from .views import home, SaveRandomUsers, signup_view, csrf_token_endpoint, signin_view, RandomUserListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),  # Map the home view to the root URL
     path('save-random-users/', SaveRandomUsers, name='save_random_users'),
     path('api/random-users/', RandomUserListView.as_view(), name='random_user_list'), 
-    path('sign-up-view/', SignUpView, name='sign_up_view'),
+    path('sign-up-view/', signup_view, name='signup_view'),
+    path('csrf-token-endpoint/', csrf_token_endpoint, name='csrf_token_endpoint'),
+    path('sign-in-view/', signin_view, name='signin_view'),
 ]
-
-

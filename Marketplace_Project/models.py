@@ -33,20 +33,3 @@ class RandomUser(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
     
-
-class NewUser(models.Model):
-    username = models.CharField(max_length=150, unique=True)
-    email = models.EmailField(max_length=254, unique=True)
-    password = models.CharField(max_length=128)  # This will be hashed
-
-    def __str__(self):
-        return self.username
-    
-    @classmethod
-    def create_user(cls, username, email, raw_password):
-        """
-        Create a new user instance with the provided data.
-        The raw password is hashed before saving.
-        """
-        hashed_password = make_password(raw_password)
-        return cls.objects.create(username=username, email=email, password=hashed_password)

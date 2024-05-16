@@ -27,3 +27,4 @@ yarn-error.log*
 node_modules/
 __pycache__/
 import_users.py
+package-lock.json

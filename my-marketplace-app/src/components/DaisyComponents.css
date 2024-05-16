@@ -1,0 +1,71 @@
+/* DaisyComponents.css */
+
+
+.min-h-half {
+    min-height: 50vh;
+    
+}
+
+.min-h-85 {
+    min-height: 85vh;
+}
+
+.btn {
+    color: oklch(1 0 0);
+}
+
+.white-text {
+    color: oklch(1 0 0) !important;
+}
+
+.carousel-item {
+    justify-content: center;
+    box-sizing: content-box;
+    display: flex;
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.timeline {
+    padding: 8rem;
+    margin: 3rem;
+    border-radius: 1rem;
+}
+
+.hero-content {
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    gap: 5rem;
+    padding: 1rem;
+    margin: 3.5rem;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Add this CSS to your stylesheet */
+.dropdown {
+    position: relative;
+    z-index: 99999; /* Set a higher z-index for the dropdown container */
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99999; /* Set a higher z-index for the dropdown content */
+  }
+  
+  /* Adjust z-index for the dropdown button */
+  .dropdown .btn {
+    z-index: 99999;
+  }
+  
+
+

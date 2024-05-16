@@ -2,7 +2,6 @@
 import os
 import sys
 
-# login = hardy/Orangeliquid
 
 def main():
     """Run administrative tasks."""

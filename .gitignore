@@ -24,4 +24,4 @@ yarn-error.log*
 
 # others
 .venv/
-.node_modules/
+/node_modules

@@ -25,4 +25,4 @@ yarn-error.log*
 # others
 .venv/
 node_modules/
-__pycache__
+__pycache__/
